@@ -1,0 +1,149 @@
+.sixth-section {
+  display: flow-root;
+  background-color: black;
+}
+
+
+.overall-container-sixth-section {
+  margin: 0 90px 0 90px;
+}
+
+.sixth-section-content-container {
+  margin: 70px 0 70px 0;
+}
+
+.sub-six-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sixth-section h1 {
+  font-family: arial;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+
+.sixth-section-button {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(20, 20, 20, 0.89);
+  background-color: rgb(247, 172, 172);
+  border: none;
+  padding: 15px 24px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+.sixth-section-button:hover {
+  background-color: rgb(243, 120, 120);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .overall-container-sixth-section {
+    margin-inline: calc(35px + (70 - 35) * ((100vw - 768px) / (991 - 768)));
+  }
+
+  .sub-six-content-container {
+    flex-direction: row;
+    align-items: center;
+    gap: calc(80px + (150 - 80) * ((100vw - 768px) / (991 - 768)));
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .overall-container-sixth-section {
+    margin-inline: calc(55px + (70 - 35) * ((100vw - 992px) / (1199 - 992)));
+  }
+
+  .sub-six-content-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 250px;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 11366px) {
+  .overall-container-sixth-section {
+    margin-inline: calc(55px + (70 - 35) * ((100vw - 1200px) / (1366 - 1200)));
+  }
+
+  .sub-six-content-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 400px;
+    margin: 30px 0;
+  }
+
+  .sixth-section-content-container {
+    margin: 30px 0;
+  }
+
+  .sixth-section-button {
+    padding: 12px 24px;
+    height: 40px;
+  }
+}
+
+/* seventh  section */
+
+.seventh-section {
+  display: flow-root;
+  background-color: rgb(58, 58, 58);
+}
+
+.seven-left-and-right {
+  display: flex;
+  justify-content: center;
+  margin-inline: 69px;
+}
+
+
+.seven-up-and-down {
+  margin: 50px 0 50px 0;
+}
+
+.seven-content {
+  margin: 0;
+  font-family: Roboto, Sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  width: 350px;
+}
+
+/*eight section */
+
+
+.eight-section {
+  display: flow-root;
+  background-color: rgb(58, 58, 58);
+}
+
+
+.eight-left-and-right {
+  display: flex;
+ justify-content: center;
+  margin-inline: 110px;
+}
+
+.eight-up-and-down {
+  margin: 40px 0 40px 0;
+}
+
+.eight-content-itself {
+  font-family: Roboto, Sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.eight-content-itself a {
+  color: rgb(101, 205, 247);
+  text-decoration: underline;
+  cursor: pointer;
+}
