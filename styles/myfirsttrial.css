@@ -1,5 +1,15 @@
 body{
   margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .first-section {
@@ -51,6 +61,7 @@ body{
   position: absolute;
   top: clamp(318px, 63vw, 530px);
   right: clamp(60px, 12vw, 150px);
+  width: 330px;
 }
 
 .second-of-the-absolute-contents {
@@ -59,14 +70,9 @@ body{
   font-weight: 600;
   line-height: 24px;
   font-size: clamp(14px, 2vw, 18px);
-  width: 330px;
+  width: 100%;
   margin: 0;
   text-align: right;
-}
-
-
-.second-of-the-absolute-contents {
-  margin: 30px;
 }
 
 .the-third-last-of-the-absolute-contents {
