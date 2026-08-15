@@ -41,6 +41,24 @@
   background-color: rgb(243, 120, 120);
 }
 
+@media (min-width: 300px) and (max-width: 499px) {
+  .overall-container-sixth-section {
+    margin-inline: calc(15px + (40 - 15) * ((100vw - 300px) / (499 - 300)));
+  }
+
+  .sub-six-content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .sixth-section h1 {
+    font-size: calc(35px + (45 - 38) * ((100vw - 300px) / (499 - 300)));
+  }
+}
+
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   .overall-container-sixth-section {
     margin-inline: calc(35px + (70 - 35) * ((100vw - 768px) / (991 - 768)));
@@ -117,6 +135,17 @@
   width: 350px;
 }
 
+
+@media (min-width: 300px) and (max-width: 499px) {
+  .seven-left-and-right {
+    margin-inline: calc(15px + (30 - 15) * ((100vw - 300px) / (499 - 300)));
+  }
+  .seven-content {
+    font-size: 13px;
+    width: 255px;
+  }
+}
+
 /*eight section */
 
 
@@ -128,7 +157,7 @@
 
 .eight-left-and-right {
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin-inline: 110px;
 }
 
@@ -146,4 +175,10 @@
   color: rgb(101, 205, 247);
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+  .eight-left-and-right {
+    margin-inline: calc(30px + (50 - 30) * ((100vw - 300px) / (499 - 300)));
+  }
 }

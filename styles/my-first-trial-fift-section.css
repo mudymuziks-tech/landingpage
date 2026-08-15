@@ -29,9 +29,27 @@
 }
 
 
+@media (min-width: 300px) and (max-width: 499px) {
+  .fift-section-first-ever-container {
+    margin-inline: calc(10px + (50 - 10) * ((100vw - 300px) / (499 - 300)));
+  }
+
+
+  .body-content-under-head1-fift-section {
+    width: 100%;
+    font-size: calc(18px + (23 - 18) * ((100vw - 300px) / (499 - 300)));
+
+  }
+
+  .head1-fift-section {
+    font-size: 15px;
+  }
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   .fift-section-first-ever-container {
-    margin-inline: calc(15px + (150 - 15) * ((100vw - 768px) / (991 - 768)))
+    margin-inline: calc(15px + (150 - 15) * ((100vw - 768px) / (991 - 768)));
   }
 
 
