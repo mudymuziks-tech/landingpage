@@ -34,22 +34,28 @@ html {
 
 .the-div-for-the-absolute-contents {
   position: absolute;
-  top: clamp(200px, 19vw, 250px);
+  top: clamp(155px, 5vw, 185px);
   left: clamp(80px, 17vw, 180px);
-}
-
-@media(min-width: 767px) {
-  .the-div-for-the-absolute-contents {
-    top: 270px;
-  }
 }
 
 .the-first-absolute-content-itself {
   color: white;
   font-family: Roboto, sans-serif;
-  font-size: clamp(4rem, 15vw, 15.625rem);
+  font-size: calc(30px + 8vw);
   font-weight: 900;
   margin: 0;
+}
+
+
+@media (min-width: 300px) and (max-width: 1366px) {
+  .the-div-for-the-absolute-contents {
+    top: calc(100px + (320 - 100) * ((100vw - 300px) / (1366 - 300)));
+    left: calc(80px + (180 - 80) * ((100vw - 300px) / (1366 - 300)));
+  }
+
+  .the-first-absolute-content-itself {
+    font-size: calc(40px + (250 - 40) * ((100vw - 300px) / (1366 - 300)));
+  }
 }
 
 .second-of-the-content-container {
@@ -59,9 +65,15 @@ html {
 
 .main-second-absolute-content-container {
   position: absolute;
-  top: clamp(318px, 63vw, 530px);
-  right: clamp(60px, 12vw, 150px);
-  width: 330px;
+  top: 62%;
+  right: clamp(30px, 8vw, 100px);
+  width: clamp(240px, 24vw, 330px);
+}
+
+@media (min-width: 300px) and (max-width: 1366px) {
+  .main-second-absolute-content-container {
+    top: calc(180px + (630 - 180) * ((100vw - 300px) / (1366 - 300)));
+  }
 }
 
 .second-of-the-absolute-contents {
